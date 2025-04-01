@@ -1,1 +1,33 @@
-node_modules\ndist\npnpm-lock.yaml\npackage-lock.json\n.env
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lock files (optionnel : si tu veux garder un gestionnaire fixe, garde-en un seul)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Env
+.env
+.env.* 
+
+# System
+.DS_Store
+Thumbs.db
+
+# Build output
+# On garde `dist/` pour publier la lib sur GitHub en tant que dépendance
+# donc on NE l'ignore PAS ici.
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+*.log

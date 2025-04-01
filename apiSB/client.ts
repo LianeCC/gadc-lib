@@ -19,8 +19,8 @@ export function createSupabaseClient(url: string, anonKey: string): SupabaseClie
   });
 }
 
-// Default instance using environment variables
-// const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://wejnpgxqolueujhhjnrz.supabase.co';
-// const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+//Default instance using environment variables
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://wejnpgxqolueujhhjnrz.supabase.co';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 
-// export const supabase = createSupabaseClient(supabaseUrl, supabaseKey); 
+export const supabase = createSupabaseClient(supabaseUrl, supabaseKey); 

@@ -30,3 +30,5 @@ export interface OnboardingSessionState {
   setHasTD: (hasTD: boolean) => void;
   resetSession: () => void;
 } 
+
+export type SessionStatus = OnboardingSessionStatus;
